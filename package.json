@@ -17,6 +17,7 @@
     "build": "yarn workspaces foreach --all --topological run build",
     "clean": "yarn workspaces foreach --all run clean && rimraf release",
     "release": "yarn clean && yarn workspaces foreach --all --topological run release",
+    "release:linux-arm64": "yarn build && yarn workspace station-desktop-app exec cross-env NODE_ENV=production electron-builder --linux AppImage --arm64 --publish never",
     "dev": "yarn workspaces foreach --all --topological run dev",
     "lint": "yarn workspaces foreach --all --topological run lint",
     "test": "yarn workspaces foreach --all run test"
@@ -24,9 +25,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "bin": {
-    "electron": "./node_modules/.bin/electron"
-  },
   "devDependencies": {
     "rimraf": "^5.0.10"
   },

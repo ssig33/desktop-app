@@ -138,6 +138,16 @@ To package apps for the local platform:
 $ yarn run build
 ```
 
+To build an arm64 Linux AppImage (on an arm64 Linux host):
+
+```bash
+$ yarn install
+$ yarn workspace station-desktop-app exec install-electron
+$ yarn run release:linux-arm64
+```
+
+The AppImage is written to `release/Station-arm64.AppImage`.
+
 #### Code signing
 The application will be automatically signed by the CI on the `release` branch
 

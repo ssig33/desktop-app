@@ -29436,8 +29436,6 @@ __metadata:
     ws: "npm:^5.2.2"
     xvfb-maybe: "npm:^0.2.1"
     yargs: "npm:^13.3.0"
-  bin:
-    electron: ./node_modules/.bin/electron
   languageName: unknown
   linkType: soft
 
@@ -29446,8 +29444,6 @@ __metadata:
   resolution: "station-project@workspace:."
   dependencies:
     rimraf: "npm:^5.0.10"
-  bin:
-    electron: ./node_modules/.bin/electron
   languageName: unknown
   linkType: soft
 

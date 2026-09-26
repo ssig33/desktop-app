@@ -30,9 +30,6 @@
     "lint": "yarn run gql-gen && tslint -p .",
     "test": "cross-env NODE_ENV=test jest --runInBand"
   },
-  "bin": {
-    "electron": "./node_modules/.bin/electron"
-  },
   "dependencies": {
     "1password-node": "^3.0.0",
     "@babel/plugin-proposal-decorators": "^7.4.4",
